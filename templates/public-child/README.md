@@ -32,6 +32,8 @@ Invoke the skill with a subject, text, image, or carrier request. The skill appl
 
 The child is independently versioned with semantic versions in `release.json` and `CHANGELOG.md`. Create a Git tag for public releases, for example `v1.0.0`. Keep the child package version separate from the parent’s private run identifier and from the public contract/schema version. The package can be maintained and validated without the parent project.
 
-## Rights, attribution, and assets
+## License and scope
 
-See `REFERENCES.md` and `ASSET-LICENSE.md`. Attribution is not permission: source material remains subject to its original rights and is not automatically relicensed by this package. Unknown or unauthorized source material must not be redistributed. “Distillation” or “style transfer” does not guarantee a legal right to copy protected expression, trademarks, personal data, or provider output.
+This child package uses the MIT License for original child-authored code, instructions, schemas, and demonstrations that the package owner is entitled to license. Commercial use of that MIT-covered material is allowed without a separate fee or permission, subject to the MIT notice and warranty disclaimer in `LICENSE`.
+
+The MIT License does **not** relicense supplied source materials, third-party images, fonts, logos, trademarks, user-provided text, model outputs, or other assets. Those materials remain subject to the terms recorded in `REFERENCES.md` and `ASSET-LICENSE.md`. Attribution is not permission. Do not publish or commercially use an asset unless its rights have been verified.

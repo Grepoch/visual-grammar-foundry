@@ -48,6 +48,12 @@ python3 scripts/validate_public.py
 - Public contract repository: `visual-grammar-foundry`
 - Public child repository: `visual-grammar-<slug>`
 
+## License
+
+The public contract repository is released under the MIT License. You may use, copy, modify, distribute, sublicense, and sell the repository’s original schemas, templates, validators, and documentation, subject to the MIT notice and warranty disclaimer in [`LICENSE`](LICENSE).
+
+MIT does not grant access to `visual-grammar-foundry-core`, private run artifacts, unpublished methods, or third-party material. A child package has its own license and rights record; its MIT license covers only child-authored material that the child owner is entitled to license. Source assets, fonts, trademarks, logos, supplied text, and other third-party content remain subject to their own terms. Commercial use of MIT-covered repository code does not require a separate fee or permission, but every third-party right and child-specific license still needs review.
+
 ## Rights and originality
 
 The contract does not grant rights to reproduce source materials. Child packages must not redistribute unverified source assets, copied wording, logos, signatures, distinctive lettering, exact layouts, or source-specific metadata. Attribution is not permission; each release is responsible for its own licenses, rights records, and human originality review.
