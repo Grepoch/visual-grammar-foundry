@@ -50,9 +50,9 @@ python3 scripts/validate_public.py
 
 ## License
 
-The public contract repository is released under the MIT License. You may use, copy, modify, distribute, sublicense, and sell the repository’s original schemas, templates, validators, and documentation, subject to the MIT notice and warranty disclaimer in [`LICENSE`](LICENSE).
+The public contract repository is released under the Apache License, Version 2.0. You may use, copy, modify, distribute, sublicense, and sell the repository’s original schemas, templates, validators, and documentation, subject to the Apache-2.0 notice and warranty disclaimer in [`LICENSE`](LICENSE).
 
-MIT does not grant access to `visual-grammar-foundry-core`, private run artifacts, unpublished methods, or third-party material. A child package has its own license and rights record; its MIT license covers only child-authored material that the child owner is entitled to license. Source assets, fonts, trademarks, logos, supplied text, and other third-party content remain subject to their own terms. Commercial use of MIT-covered repository code does not require a separate fee or permission, but every third-party right and child-specific license still needs review.
+Apache-2.0 does not grant access to `visual-grammar-foundry-core`, private run artifacts, unpublished methods, or third-party material. A child package has its own license and rights record; its license covers only child-authored material that the child owner is entitled to license. Source assets, fonts, trademarks, logos, supplied text, and other third-party content remain subject to their own terms. Commercial use of Apache-2.0-covered repository code does not require a separate fee or permission, but every third-party right and child-specific license still needs review.
 
 ## Rights and originality
 

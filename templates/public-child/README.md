@@ -34,6 +34,6 @@ The child is independently versioned with semantic versions in `release.json` an
 
 ## License and scope
 
-This child package uses the MIT License for original child-authored code, instructions, schemas, and demonstrations that the package owner is entitled to license. Commercial use of that MIT-covered material is allowed without a separate fee or permission, subject to the MIT notice and warranty disclaimer in `LICENSE`.
+This child package uses the Apache License, Version 2.0 for original child-authored code, instructions, schemas, and demonstrations that the package owner is entitled to license. Commercial use of that Apache-2.0-covered material is allowed without a separate fee or permission, subject to the Apache-2.0 notice and warranty disclaimer in `LICENSE`.
 
-The MIT License does **not** relicense supplied source materials, third-party images, fonts, logos, trademarks, user-provided text, model outputs, or other assets. Those materials remain subject to the terms recorded in `REFERENCES.md` and `ASSET-LICENSE.md`. Attribution is not permission. Do not publish or commercially use an asset unless its rights have been verified.
+The Apache License, Version 2.0 does **not** relicense supplied source materials, third-party images, fonts, logos, trademarks, user-provided text, model outputs, or other assets. Those materials remain subject to the terms recorded in `REFERENCES.md` and `ASSET-LICENSE.md`. Attribution is not permission. Do not publish or commercially use an asset unless its rights have been verified.
