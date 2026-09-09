@@ -1,5 +1,7 @@
 # Visual Grammar Foundry
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 Public interoperability contract for standalone `style-skill` child packages.
 
 This repository is intentionally separate from the private production system:
