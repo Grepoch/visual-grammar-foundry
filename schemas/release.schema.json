@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public child release manifest",
+  "type": "object",
+  "required": ["schema_version", "contract_version", "slug", "name", "version", "status", "public_entry", "required_files", "source_material_count", "examples", "public_boundaries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": 1},
+    "contract_version": {"const": 1},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 3},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "status": {"enum": ["draft", "released"]},
+    "public_entry": {"const": "SKILL.md"},
+    "required_files": {
+      "const": [
+        "SKILL.md",
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE",
+        "ASSET-LICENSE.md",
+        "REFERENCES.md",
+        "release.json",
+        ".gitignore",
+        "scripts/validate_public.py",
+        ".github/workflows/validate.yml",
+        "evals/evals.json",
+        "evals/schema.json",
+        "design-system/routing.json",
+        "design-system/compositions.json",
+        "design-system/materials.json",
+        "design-system/typography.json",
+        "design-system/constraints.json"
+      ]
+    },
+    "source_material_count": {"type": "integer", "minimum": 3},
+    "examples": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "public_boundaries": {
+      "type": "object",
+      "required": ["contains_private_training_notes", "contains_source_reconstruction", "attribution_file"],
+      "additionalProperties": false,
+      "properties": {
+        "contains_private_training_notes": {"const": false},
+        "contains_source_reconstruction": {"const": false},
+        "attribution_file": {"const": "REFERENCES.md"}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "released"}}},
+      "then": {"properties": {"examples": {"minItems": 3}}}
+    }
+  ]
+}

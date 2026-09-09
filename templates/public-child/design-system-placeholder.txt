@@ -1,0 +1,6 @@
+The generated child replaces this placeholder with public operational catalogs:
+- routing.json
+- compositions.json
+- materials.json
+- typography.json
+- constraints.json

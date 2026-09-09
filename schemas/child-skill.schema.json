@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public style-skill child package",
+  "type": "object",
+  "required": ["schema_version", "slug", "name", "version", "public_entry", "required_files", "source_material_count", "examples", "public_boundaries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": 1},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 3},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "public_entry": {"const": "SKILL.md"},
+    "required_files": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string"}
+    },
+    "source_material_count": {"type": "integer", "minimum": 3},
+    "examples": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+    "public_boundaries": {
+      "type": "object",
+      "required": ["contains_private_training_notes", "contains_source_reconstruction", "attribution_file"],
+      "additionalProperties": false,
+      "properties": {
+        "contains_private_training_notes": {"const": false},
+        "contains_source_reconstruction": {"const": false},
+        "attribution_file": {"const": "REFERENCES.md"}
+      }
+    }
+  }
+}
