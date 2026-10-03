@@ -11,7 +11,6 @@ REQUIRED = (
     "README.md",
     "LICENSE",
     "docs/CONTRACT.md",
-    "schemas/child-skill.schema.json",
     "schemas/release.schema.json",
     "templates/public-child/SKILL.md",
     "templates/public-child/README.md",
@@ -48,7 +47,7 @@ for relative in REQUIRED:
     if not (ROOT / relative).is_file():
         fail(f"missing required file {relative}")
 
-for relative in ("schemas/child-skill.schema.json", "schemas/release.schema.json"):
+for relative in ("schemas/release.schema.json",):
     try:
         json.loads((ROOT / relative).read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
