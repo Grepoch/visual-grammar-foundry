@@ -48,6 +48,14 @@ python3 scripts/validate_public.py
 - Public contract repository: `visual-grammar-foundry`
 - Public child repository: `visual-grammar-<slug>`
 
+## Released children
+
+| Child | Version | Repository |
+| --- | --- | --- |
+| `stage-grid-poster` | 0.2.0 | https://github.com/Grepoch/visual-grammar-stage-grid-poster |
+
+This list registers children released against `contract_version: 1`. Each is an independent repository validated by its own `scripts/validate_public.py`.
+
 ## License
 
 The public contract repository is released under the Apache License, Version 2.0. You may use, copy, modify, distribute, sublicense, and sell the repository’s original schemas, templates, validators, and documentation, subject to the Apache-2.0 notice and warranty disclaimer in [`LICENSE`](LICENSE).

@@ -50,6 +50,14 @@ python3 scripts/validate_public.py
 - 公共契约仓库：`visual-grammar-foundry`
 - 公共子项目仓库：`visual-grammar-<slug>`
 
+## 已发布的子项目
+
+| 子项目 | 版本 | 仓库 |
+| --- | --- | --- |
+| `stage-grid-poster` | 0.2.0 | https://github.com/Grepoch/visual-grammar-stage-grid-poster |
+
+此列表登记基于 `contract_version: 1` 发布的子项目。每个子项目都是独立仓库，并由其自带的 `scripts/validate_public.py` 校验。
+
 ## 许可证
 
 公共契约仓库采用 Apache License 2.0。你可以按照 [`LICENSE`](LICENSE) 中的许可证通知和免责声明，使用、复制、修改、分发、再许可和销售本仓库中的原创 schemas、模板、校验器和文档。
