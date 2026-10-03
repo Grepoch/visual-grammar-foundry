@@ -1,5 +1,7 @@
 # {{CHILD_NAME}}
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 A reusable public style-skill generated from a supplied material set.
 
 ## Use

@@ -52,9 +52,11 @@ python3 scripts/validate_public.py
 
 | Child | Version | Repository |
 | --- | --- | --- |
-| `stage-grid-poster` | 0.2.0 | https://github.com/Grepoch/visual-grammar-stage-grid-poster |
+| `stage-grid-poster` | 0.3.0 | https://github.com/Grepoch/visual-grammar-stage-grid-poster |
 
 This list registers children released against `contract_version: 1`. Each is an independent repository validated by its own `scripts/validate_public.py`.
+
+The same list is available in machine-readable form at [`children.json`](children.json).
 
 ## License
 

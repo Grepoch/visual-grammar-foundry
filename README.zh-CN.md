@@ -54,9 +54,11 @@ python3 scripts/validate_public.py
 
 | 子项目 | 版本 | 仓库 |
 | --- | --- | --- |
-| `stage-grid-poster` | 0.2.0 | https://github.com/Grepoch/visual-grammar-stage-grid-poster |
+| `stage-grid-poster` | 0.3.0 | https://github.com/Grepoch/visual-grammar-stage-grid-poster |
 
 此列表登记基于 `contract_version: 1` 发布的子项目。每个子项目都是独立仓库，并由其自带的 `scripts/validate_public.py` 校验。
+
+同一列表以机器可读形式提供于 [`children.json`](children.json)。
 
 ## 许可证
 

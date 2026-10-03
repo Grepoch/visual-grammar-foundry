@@ -16,6 +16,7 @@
       "const": [
         "SKILL.md",
         "README.md",
+        "README.zh-CN.md",
         "CHANGELOG.md",
         "LICENSE",
         "ASSET-LICENSE.md",

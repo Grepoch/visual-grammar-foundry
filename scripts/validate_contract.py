@@ -14,6 +14,7 @@ REQUIRED = (
     "schemas/release.schema.json",
     "templates/public-child/SKILL.md",
     "templates/public-child/README.md",
+    "templates/public-child/README.zh-CN.md",
     "templates/public-child/CHANGELOG.md",
     "templates/public-child/LICENSE",
     "templates/public-child/ASSET-LICENSE.md",
@@ -21,6 +22,7 @@ REQUIRED = (
     "templates/public-child/.gitignore",
     "templates/public-child/scripts/validate_public.py",
     "templates/public-child/.github/workflows/validate.yml",
+    "children.json",
 )
 POLICY_FILES = {
     Path("README.md"),
@@ -70,5 +72,23 @@ for path in ROOT.rglob("*"):
     for marker in PRIVATE_MARKERS:
         if marker.lower() in text and relative not in POLICY_FILES:
             fail(f"private marker {marker!r} in {relative}")
+
+# Every child template ships bilingual top-level docs.
+for relative in ("README.md", "README.zh-CN.md"):
+    text = (ROOT / "templates" / "public-child" / relative).read_text(encoding="utf-8")
+    if "README.zh-CN.md" not in text or "README.md" not in text:
+        fail(f"templates/public-child/{relative} must link both language pages")
+
+# The released-children registry must be valid JSON with a matching README list.
+registry = json.loads((ROOT / "children.json").read_text(encoding="utf-8"))
+if registry.get("contract_version") != 1 or not isinstance(registry.get("children"), list):
+    fail("children.json must declare contract_version 1 and a children list")
+readme = (ROOT / "README.md").read_text(encoding="utf-8")
+for child in registry["children"]:
+    for key in ("slug", "version", "repository"):
+        if not child.get(key):
+            fail(f"children.json entry missing {key}: {child}")
+    if child["repository"] not in readme:
+        fail(f"children.json entry {child['slug']} is not listed in README.md")
 
 print("Validated public Visual Grammar Foundry contract repository.")

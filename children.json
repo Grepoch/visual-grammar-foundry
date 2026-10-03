@@ -1,0 +1,12 @@
+{
+  "contract_version": 1,
+  "children": [
+    {
+      "slug": "stage-grid-poster",
+      "name": "Stage Grid Poster",
+      "version": "0.3.0",
+      "repository": "https://github.com/Grepoch/visual-grammar-stage-grid-poster",
+      "summary": "Brand-event poster grammar: one full-bleed stage, one dominant centered artifact, a micro header row, and a fixed three-column footer grid."
+    }
+  ]
+}
