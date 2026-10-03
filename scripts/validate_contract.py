@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
 
@@ -31,12 +30,12 @@ POLICY_FILES = {
     Path("templates/public-child/REFERENCES.md"),
 }
 PRIVATE_MARKERS = (
-    "private-" + "core/runs",
-    "routing " + "weights",
-    "prompt " + "compiler",
-    "evidence-" + "notes",
-    "hidden " + "inventories",
-    "discovery " + "implementation",
+    "private-core/runs",
+    "routing weights",
+    "prompt compiler",
+    "evidence-notes",
+    "hidden inventories",
+    "discovery implementation",
 )
 
 
